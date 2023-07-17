@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 class="h1">Калькулятор</h1>
+    <div class="main">
+        <p>
+            <input type="number" id="num1" class="input">
+            <select onchange="sign_of(this.value)", class="signs">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value=":">:</option>
+            </select>
+            <input type="number" id="num2" class="input">
+            <b class="zn">=</b>
+            <b id="answer" class="answer">0</b>
+        </p>
+        <button class="ans" onclick="rez()">Ответ</button>
+    </div>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
